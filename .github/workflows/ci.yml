@@ -161,10 +161,10 @@ jobs:
 
       - name: Build packages
         run: |
-          cd packages/darnit && uv build
-          cd ../darnit-baseline && uv build
+          uv build --package darnit
+          uv build --package darnit-baseline
 
       - name: Verify package contents
         run: |
-          ls -la packages/darnit/dist/
-          ls -la packages/darnit-baseline/dist/
+          ls -la dist/
+          ls dist/*.whl dist/*.tar.gz
