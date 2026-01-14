@@ -20,7 +20,7 @@ This repository includes an MCP (Model Context Protocol) server for AI assistant
 - **Automated Remediation**: Generate fixes for compliance gaps with dry-run support
 - **Project Configuration**: Canonical `.project.yaml` for project metadata and documentation locations
 - **Attestation Generation**: Create cryptographically signed in-toto attestations
-- **STRIDE Threat Modeling**: Built-in security threat analysis
+- **STRIDE Threat Modeling**: (Alpha) Built-in security threat analysis. To be only used for basic drafting.
 
 ## Included Implementation: OpenSSF Baseline
 
@@ -104,6 +104,8 @@ darnit-baseline/               # OpenSSF Baseline Implementation
 ## Project Configuration
 
 The `.project.yaml` file is the canonical source of truth for your project's metadata and documentation locations.
+
+**NOTE:** This is a stopgap solution untile CNCF's `.project/` specification is fleshed out a bit more. This `.project.yaml` is based on what has been made available for `.project/` along with additional information for Baseline conformance.
 
 ### Example `.project.yaml`
 
